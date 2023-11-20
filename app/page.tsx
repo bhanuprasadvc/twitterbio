@@ -11,7 +11,7 @@ import { useChat } from 'ai/react';
 
 export default function Page() {
   const [bio, setBio] = useState('');
-  const [vibe, setVibe] = useState<VibeType>('Professional');
+  const [vibe, setVibe] = useState<VibeType>('Nati');
   const bioRef = useRef<null | HTMLDivElement>(null);
 
   const scrollToBios = () => {
@@ -53,7 +53,7 @@ export default function Page() {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Generate your next Twitter bio using chatGPT
+          Generate your next Bhanu bio using chatGPT
         </h1>
         <p className="text-slate-500 mt-5">47,118 bios generated so far.</p>
         <form className="max-w-xl w-full" onSubmit={onSubmit}>
@@ -104,9 +104,9 @@ export default function Page() {
               disabled
             >
               <span className="loading">
-                <span style={{ backgroundColor: 'white' }} />
-                <span style={{ backgroundColor: 'white' }} />
-                <span style={{ backgroundColor: 'white' }} />
+                <span style={{ backgroundColor: 'green' }} />
+                <span style={{ backgroundColor: 'blue' }} />
+                <span style={{ backgroundColor: 'red' }} />
               </span>
             </button>
           )}
